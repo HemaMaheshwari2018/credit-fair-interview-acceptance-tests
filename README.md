@@ -79,19 +79,19 @@
 ##### Expected Behavior - Since user has drawn $600, "Credit Available" should indicate $400 of $1,000.
 
 ### Issue #3 -
-####url - https://credit-test.herokuapp.com/line_of_credits
-####Summary - "Destroy" link is not working on Listing Line of Credits
-#####Scenario Steps -
+#### url - https://credit-test.herokuapp.com/line_of_credits
+#### Summary - "Destroy" link is not working on Listing Line of Credits
+##### Scenario Steps -
 1. Navigate to https://credit-test.herokuapp.com/line_of_credits
 2. Click on "Destroy" link for a credit histroy entry.
 
-#####Issue  - user is unable to remove "credit" entry.
-#####Expected Behavior - "Destory" link should supposedly remove credit line from credit listing.
+##### Issue  - user is unable to remove "credit" entry.
+##### Expected Behavior - "Destory" link should supposedly remove credit line from credit listing.
 
 ### Issue # 4 -
-####url - https://credit-test.herokuapp.com/line_of_credits/[credit id]
-####Summary - Internal Server error returned when user does not enter amount and clicks "Save Transactions" on /line_of_credits/[credit id] page
-#####Scenario Steps-
+#### url - https://credit-test.herokuapp.com/line_of_credits/[credit id]
+#### Summary - Internal Server error returned when user does not enter amount and clicks "Save Transactions" on /line_of_credits/[credit id] page
+##### Scenario Steps-
 1. Navigate to https://credit-test.herokuapp.com
 2. Enter 35.000% APR
 3. Enter $1000 for credit limit.
@@ -102,12 +102,12 @@
 8. Do not enter any amount
 9. Click "Save Transaction"
 
-#####Issue - Internal Server error returned when user does not enter amount and clicks "Save Transactions".
-#####Scenario-Expected Behavior - Error handling should occur and error message should be returned indciating user to enter amount.
+##### Issue - Internal Server error returned when user does not enter amount and clicks "Save Transactions".
+##### Scenario-Expected Behavior - Error handling should occur and error message should be returned indciating user to enter amount.
 
 ### Issue # 5 
-####Summary - User is not allowed to pay in cents. This way user will not be able to pay complete amount(when interest is accrued in cents)
-#####Scenario Steps -
+#### Summary - User is not allowed to pay in cents. This way user will not be able to pay complete amount(when interest is accrued in cents)
+##### Scenario Steps -
 1. Navigate to https://credit-test.herokuapp.com
 2. Enter 35.000% APR
 3. Enter $1000 for credit limit.
@@ -121,8 +121,8 @@
 11.Select Applied Day = 30
 12.Enter Amount = $50.41 in order to pay off the complete amount(principal + interest)
 
-#####Issue - Application doesn't allow user to pay in cents
-#####Expected Behavior - Application should be able to accept amount in cents also (amount data type should be float)
+##### Issue - Application doesn't allow user to pay in cents
+##### Expected Behavior - Application should be able to accept amount in cents also (amount data type should be float)
 
 
 # Suggestions For Improvement -
