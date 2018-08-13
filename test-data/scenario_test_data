@@ -1,0 +1,8 @@
+scenario-num, apr, credit_limit, applied_at_day, drawn/payment, amount , interest_charged_days, balance, total_interest_accrued
+scenario_1, 35, 1000, 1, Draw, 500, 30, 500, 14.38
+scenario_2, 35, 1000, 1, Draw, 500, 30, 500, 14.38
+scenario_2, 0, 1000, 15, Payment, 200, 30, 300, 10.07
+scenario_2, 0, 1000, 25, Draw, 100, 30, 400, 11.99
+scenario_3, 35, 1000, 1, Draw, 10000, 0, 0, 0
+scenario_4, 35, 1000, 1, Draw, 0, 0, 0, 0
+scenario_7, 35, 1000, 1, Draw, 50, 30, 500, 14.38
